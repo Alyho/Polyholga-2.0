@@ -32068,6 +32068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8217809979965913708, guid: 1898768398ac69a44bffcb96611267d0, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9165597975452352049, guid: 1898768398ac69a44bffcb96611267d0, type: 3}
       propertyPath: cameraShake
       value: 
@@ -35278,6 +35282,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1715063637}
     m_Modifications:
+    - target: {fileID: 1103642797382533434, guid: 35644c1cf013d374c8211889092b016a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343947362496585802, guid: 35644c1cf013d374c8211889092b016a, type: 3}
+      propertyPath: speed
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3910174254278942124, guid: 35644c1cf013d374c8211889092b016a, type: 3}
       propertyPath: m_Name
       value: Ending Credits
