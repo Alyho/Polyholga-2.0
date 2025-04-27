@@ -6,24 +6,41 @@ using UnityEngine.SceneManagement;
 
 public class ScrollUp : MonoBehaviour
 {
-    public float speed = 2f;
     public Image image;
     public float fadeTime = 2f;
+
+    private float duration = 15f;
+    private float endY = 650f;
+    private Vector3 startPoint;
+    private Vector3 endPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        startPoint = transform.position;
+        endPoint = new Vector3(transform.position.x, endY, transform.position.z);
+        StartCoroutine(Scroll());
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + speed, transform.position.z);
+
     }
 
-    public void FadeToBlack()
+
+    private IEnumerator Scroll()
     {
+        float timeElapsed = 0;
+        while (timeElapsed < duration)
+        {
+            timeElapsed += Time.deltaTime;
+            Debug.Log("time elapsed" + timeElapsed + " delta" + Time.deltaTime + "t" + timeElapsed / duration);
+            transform.position = Vector3.Lerp(startPoint, endPoint, timeElapsed / duration);
+
+            yield return null;
+        }
+
         StartCoroutine(FadeToBlackCoroutine());
     }
 

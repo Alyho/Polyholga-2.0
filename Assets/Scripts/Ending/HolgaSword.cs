@@ -35,6 +35,7 @@ public class HolgaSword : MonoBehaviour
             swordSprite.SetActive(false);
 
             GetComponent<Outline>().OutlineWidth = 0;
+            hasSword = false;
         }
     }
 
