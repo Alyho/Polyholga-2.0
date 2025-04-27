@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FirstScene.unity
+    path: Assets/Scenes/Version 1 Scenes/FirstScene.unity
     guid: e580f93bb65d871458928d70991a564c
   - enabled: 1
-    path: Assets/Scenes/city-square.unity
+    path: Assets/Scenes/Version 1 Scenes/city-square.unity
     guid: 47f2c63c55c2845ae817da14aa54acf9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
