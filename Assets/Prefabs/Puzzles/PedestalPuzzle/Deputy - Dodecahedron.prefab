@@ -222,6 +222,22 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5447688326947051316, guid: 1cf84d4aad27041189a8d284eb61e176, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447688326947051316, guid: 1cf84d4aad27041189a8d284eb61e176, type: 3}
+      propertyPath: m_Color.g
+      value: 0.1091954
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447688326947051316, guid: 1cf84d4aad27041189a8d284eb61e176, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447688326947051316, guid: 1cf84d4aad27041189a8d284eb61e176, type: 3}
+      propertyPath: m_Intensity
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6202296644969623002, guid: 1cf84d4aad27041189a8d284eb61e176, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

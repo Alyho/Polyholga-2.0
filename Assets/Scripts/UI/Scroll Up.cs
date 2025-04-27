@@ -17,7 +17,7 @@ public class ScrollUp : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y + speed, transform.position.z);
     }

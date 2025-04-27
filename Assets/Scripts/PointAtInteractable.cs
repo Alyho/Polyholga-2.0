@@ -7,7 +7,7 @@ public class PointAtInteractable : MonoBehaviour
 {
     [SerializeField] private GameObject mainCamera;
 
-    public float raycastDistance = 30f;
+    public float raycastDistance = 50f;
     public LayerMask hitLayers;
 
     public static GameObject CurrentlyHighlightedObject;
@@ -37,7 +37,7 @@ public class PointAtInteractable : MonoBehaviour
                     CurrentlyHighlightedObject = null;
                     return;
                 }
-                
+
                 CurrentlyHighlightedObject = interactable.gameObject;
             }
             else
