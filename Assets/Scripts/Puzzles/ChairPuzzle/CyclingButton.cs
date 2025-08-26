@@ -17,7 +17,7 @@ public class CyclingButton : MonoBehaviour
     public GameObject label;
     public Sprite[] shapes;
     public int counter = 0;
-    
+
     [Header("Puzzle Info")]
     public int order;
     public LabelController controller;
@@ -26,13 +26,13 @@ public class CyclingButton : MonoBehaviour
     /// Position of button at scene start (we always return to this at the end of the animation)
     /// </summary>
     private Vector3 _startPos;
-    
+
     /// <summary>
     /// Position of button directly before press (we start the animation at this position)
     /// </summary>
     private Vector3 _posBeforePress;
     private Vector3 _endPos;
-    
+
     private void Start()
     {
         label.GetComponent<SpriteRenderer>().sprite = shapes[counter];
@@ -44,10 +44,12 @@ public class CyclingButton : MonoBehaviour
         if (currentAnimationCoroutine != null) StopCoroutine(currentAnimationCoroutine);
 
         _posBeforePress = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        
+
         // Make sure animation doesn't affect the button's y-position
         _startPos.y = _posBeforePress.y;
-        
+        _startPos.x = _posBeforePress.x;
+        _startPos.z = _posBeforePress.z;
+
         _endPos = _posBeforePress + (transform.forward * depressionDepth);
 
         currentAnimationCoroutine = PushButtonCoroutine();
@@ -65,10 +67,10 @@ public class CyclingButton : MonoBehaviour
     private IEnumerator PushButtonCoroutine()
     {
         PlayClickSound();
-        
+
         counter = (counter + 1) % 6;
         label.GetComponent<SpriteRenderer>().sprite = shapes[counter];
-        
+
         controller.Click(order);
 
         float elapsedTime = 0f;
@@ -77,7 +79,7 @@ public class CyclingButton : MonoBehaviour
             transform.position = Vector3.Lerp(_posBeforePress, _endPos, animationCurve.Evaluate(elapsedTime / pushAnimationLength));
 
             elapsedTime += Time.deltaTime;
-            yield return null; 
+            yield return null;
         }
 
         elapsedTime = 0f;
