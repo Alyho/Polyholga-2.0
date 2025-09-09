@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sword
   - Ground
+  - New Origin
   layers:
   - Default
   - TransparentFX

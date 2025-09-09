@@ -16,7 +16,19 @@ public class ColorAnimation : MonoBehaviour
     {
         origin = GameObject.FindWithTag("Sword");
 
-        float distance = Vector3.Distance(origin.transform.position, transform.position);
+        Vector3 referencePos = transform.position;
+
+        if (transform.parent != null)
+        {
+            if (transform.parent.CompareTag("New Origin"))
+            {
+                referencePos = transform.parent.position;
+            }
+
+        }
+
+
+        float distance = Vector3.Distance(origin.transform.position, referencePos);
 
         StartCoroutine(ChangeColorDelay(distance));
 
@@ -28,8 +40,9 @@ public class ColorAnimation : MonoBehaviour
     {
         float delay = distance / 3;
 
-        if (delay >= 25){
-            delay = distance / 5; 
+        if (delay >= 25)
+        {
+            delay = distance / 5;
         }
 
         yield return new WaitForSeconds(delay);
@@ -48,10 +61,11 @@ public class ColorAnimation : MonoBehaviour
 
         jumpScript = GetComponent<Jump>();
 
-        if (jumpScript != null){
+        if (jumpScript != null)
+        {
             jumpScript.enabled = true;
         }
-    
+
     }
 
     // TODO: make coroutine that transitions current color to restored color

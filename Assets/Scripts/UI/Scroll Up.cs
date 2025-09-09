@@ -9,8 +9,8 @@ public class ScrollUp : MonoBehaviour
     public Image image;
     public float fadeTime = 2f;
 
-    private float duration = 15f;
-    private float endY = 650f;
+    private float duration = 20f;
+    private float endY = 750f;
     private Vector3 startPoint;
     private Vector3 endPoint;
 

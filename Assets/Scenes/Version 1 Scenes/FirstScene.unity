@@ -157,8 +157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ONLY YOU, TRAVELER, HAVE WHAT IT TAKES TO RETURN THE SWORD AND SAVE THE
-    KINGDOM.
+  m_text: FIND AND RETURN THE SWORD TO POLYHOLGA.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -415,8 +414,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ONE COULD EVEN SAY IT WAS THE PLATONIC IDEAL OF A KINGDOM. THAT WOULD BE
-    SOLIDLY ACCURATE.
+  m_text: BUT ONE DAY, GREEDY KING CUBE SOUGHT POLYHOLGA'S GLORY FOR HIMSELF, AND
+    STOLE HER STATUE'S SWORD.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -709,8 +708,6 @@ MonoBehaviour:
     SPACE
     - JUMP
 
-    SHIFT - SPRINT
-
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff5ec5b5147161449ac3d8bf4809b3a1, type: 2}
@@ -824,7 +821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510, y: -478}
+  m_AnchoredPosition: {x: 357, y: -493}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137574984
@@ -1100,7 +1097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 128910191a0c27f43901e41b4532bc67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9975110636cffaf41872f7f259bca302, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1178,7 +1175,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ONCE UPON A TIME, ALL THE DENIZENS OF SHAPELAND LIVED IN PEACE AND HARMONY.
+  m_text: UNDER THE WATCHFUL GAZE OF THEIR GOD POLYHOLGA, THE DENIZENS OF SHAPELAND
+    PROSPERED.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1314,7 +1312,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UNDER THE WATCHFUL GAZE OF THEIR GOD POLYHOLGA, THE KINGDOM PROSPERED.
+  m_text: ONE COULD EVEN SAY IT WAS THE PLATONIC IDEAL OF A KINGDOM. THAT WOULD BE
+    SOLIDLY ACCURATE.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1525,8 +1524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUT ALL EMPIRES MUST FALL. IN HIS GREED, KING CUBE SOUGHT POLYHOLGA'S GLORY
-    FOR HIMSELF, AND STOLE HER STATUE'S SWORD.
+  m_text: ONLY YOU, LONELY TRAVELER, CAN SAVE SHAPELAND.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
