@@ -8897,7 +8897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956627127687821236, guid: 6487e3a46ef414c0bb1447605c8dc41d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.008
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3956627127687821236, guid: 6487e3a46ef414c0bb1447605c8dc41d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13987,7 +13987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2324173066876493198, guid: 8e1d4a7525086413398dab56d3ee30aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.008
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 2324173066876493198, guid: 8e1d4a7525086413398dab56d3ee30aa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15538,6 +15538,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6487e3a46ef414c0bb1447605c8dc41d, type: 3}
+--- !u!1 &1284236236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284236237}
+  m_Layer: 5
+  m_Name: EndScroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1284236237
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284236236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1959726368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 940}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1286106827
 GameObject:
   m_ObjectHideFlags: 0
@@ -17307,7 +17342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956627127687821236, guid: 6487e3a46ef414c0bb1447605c8dc41d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.008
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 3956627127687821236, guid: 6487e3a46ef414c0bb1447605c8dc41d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23296,7 +23331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8411160430679333158, guid: 1898768398ac69a44bffcb96611267d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 186.4
+      value: 184.2
       objectReference: {fileID: 0}
     - target: {fileID: 8411160430679333158, guid: 1898768398ac69a44bffcb96611267d0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25626,6 +25661,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2343947362496585802, guid: 35644c1cf013d374c8211889092b016a, type: 3}
+      propertyPath: endPointObject
+      value: 
+      objectReference: {fileID: 1284236236}
     - target: {fileID: 3910174254278942124, guid: 35644c1cf013d374c8211889092b016a, type: 3}
       propertyPath: m_Name
       value: Ending Credits
@@ -25725,7 +25764,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5989048619299995622, guid: 35644c1cf013d374c8211889092b016a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1284236237}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35644c1cf013d374c8211889092b016a, type: 3}
 --- !u!224 &1959726368 stripped
@@ -28114,6 +28156,10 @@ PrefabInstance:
       propertyPath: cutScene
       value: 
       objectReference: {fileID: 2085124561}
+    - target: {fileID: 3821256344937603280, guid: 3d245535431bf42489fe4aad1595edf5, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 763921649}
     - target: {fileID: 3821256344937603280, guid: 3d245535431bf42489fe4aad1595edf5, type: 3}
       propertyPath: swordSprite
       value: 

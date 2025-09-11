@@ -10,15 +10,15 @@ public class ScrollUp : MonoBehaviour
     public float fadeTime = 2f;
 
     private float duration = 20f;
-    private float endY = 750f;
     private Vector3 startPoint;
     private Vector3 endPoint;
+    public GameObject endPointObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         startPoint = transform.position;
-        endPoint = new Vector3(transform.position.x, endY, transform.position.z);
+        endPoint = endPointObject.transform.position;
         StartCoroutine(Scroll());
     }
 

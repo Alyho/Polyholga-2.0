@@ -11,6 +11,7 @@ public class HolgaSword : MonoBehaviour
     public GameObject cutScene;
 
     public GameObject emptySwordSprite;
+    public GameObject crosshair;
 
     public float growFactor;
     public float waitTime;
@@ -33,6 +34,7 @@ public class HolgaSword : MonoBehaviour
         {
             cutScene.SetActive(true);
             swordSprite.SetActive(false);
+            crosshair.SetActive(false);
 
             GetComponent<Outline>().OutlineWidth = 0;
             hasSword = false;
