@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -106,15 +106,158 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: the_table_clue-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 353
+        width: 530
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98426c45f2d77d7418792300d3e3d26d
+      internalID: -1658301878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_table_clue-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 281
+        width: 514
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0434fc43ce5104a92cf00aed02a008
+      internalID: 1484653933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_table_clue-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 202
+        width: 516
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c29e8336f936f4d8070a86bc819440
+      internalID: -1522177254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_table_clue-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 128
+        width: 528
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b31c3058878fff42bceed818d77dfc8
+      internalID: 245392167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_table_clue-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 13
+        width: 521
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399898596eda28f42b7360ab61373002
+      internalID: 1503333813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -265, y: 132}
+      - {x: 264, y: 132}
+      - {x: 264, y: 211}
+      - {x: -265, y: 211}
+    - - {x: -265, y: 63}
+      - {x: 235, y: 63}
+      - {x: 235, y: 124}
+      - {x: -265, y: 124}
+    - - {x: -263, y: -28}
+      - {x: 250, y: -28}
+      - {x: 250, y: 50}
+      - {x: -263, y: 50}
+    - - {x: -260, y: -100}
+      - {x: 250, y: -98}
+      - {x: 250, y: -16}
+      - {x: -260, y: -16}
+    - - {x: -258, y: -194}
+      - {x: 246, y: -194}
+      - {x: 246, y: -106}
+      - {x: -258, y: -106}
     customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -122,7 +265,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      the_table_clue-removebg-preview_0: -1658301878
+      the_table_clue-removebg-preview_1: 1484653933
+      the_table_clue-removebg-preview_2: -1522177254
+      the_table_clue-removebg-preview_3: 245392167
+      the_table_clue-removebg-preview_4: 1503333813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
