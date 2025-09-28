@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Handle : MonoBehaviour
 {
+    public UnityEvent onSolve;
+    public GameObject solvedIndicator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,11 +24,14 @@ public class Handle : MonoBehaviour
         {
             if (GearManager.Instance.currentOrder[i] != GearManager.Instance.correctOrder[i])
             {
-                Debug.Log("Incorrect");
+                //Debug.Log("Incorrect");
                 return;
             }
         }
 
-        Debug.Log("YOU DID IT");
+        GetComponent<Interactable>().SetInteractable(false);
+        solvedIndicator.SetActive(true);
+        onSolve?.Invoke();
+        //Debug.Log("YOU DID IT");
     }
 }

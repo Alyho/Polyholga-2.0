@@ -6,6 +6,8 @@ public class GearLogic : MonoBehaviour
     private Vector3 startPos;
     private int gearNumber;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Handle handle;
+
     void Start()
     {
         _interactableScript = GetComponent<Interactable>();
@@ -38,5 +40,14 @@ public class GearLogic : MonoBehaviour
 
         GearManager.Instance.selectedGear = gameObject;
         _interactableScript.enabled = false;
+    }
+
+    private void OnEnable() => handle.onSolve.AddListener(OnSolve);
+
+    private void OnDisable() => handle.onSolve.RemoveListener(OnSolve);
+
+    private void OnSolve()
+    {
+        GetComponent<Interactable>().SetInteractable(false);
     }
 }

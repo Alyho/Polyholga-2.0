@@ -11,7 +11,7 @@ public class ShaftLogic : MonoBehaviour
         _interactableScript = GetComponent<Interactable>();
         _outlineScript = GetComponent<Outline>();
         shaftNumber = int.Parse(gameObject.name);
-        Debug.Log("hi?? " + GearManager.Instance.currentOrder.Length);
+        //Debug.Log("hi?? " + GearManager.Instance.currentOrder.Length);
     }
 
     // Update is called once per frame
