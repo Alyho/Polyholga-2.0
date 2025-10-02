@@ -752,6 +752,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1898583799887521301, guid: aebfea1b83746a746a283900b78439a0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+    - target: {fileID: 1898583799887521301, guid: aebfea1b83746a746a283900b78439a0, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8113259672164567101, guid: aebfea1b83746a746a283900b78439a0, type: 3}
       propertyPath: m_Name
       value: maze2
