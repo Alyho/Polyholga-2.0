@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour
 {
     private Outline _outlineScript;
     private float mouseDownTime;
-    private float holdThreshold = 0.5f;
+    private float holdThreshold = 0.3f;
     private bool isHolding;
 
     [Tooltip("The maximum distance at which this is interactable")]

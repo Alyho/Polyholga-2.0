@@ -236,7 +236,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8645367757099426085}
         m_TargetAssemblyTypeName: ClickableButton, Assembly-CSharp
-        m_MethodName: OnPush
+        m_MethodName: OnBuzzShort
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -248,10 +248,34 @@ MonoBehaviour:
         m_CallState: 2
   onHold:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8645367757099426085}
+        m_TargetAssemblyTypeName: ClickableButton, Assembly-CSharp
+        m_MethodName: OnBuzzLong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoldRelease:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8645367757099426085}
+        m_TargetAssemblyTypeName: ClickableButton, Assembly-CSharp
+        m_MethodName: OnBuzzLongRelease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   isInteractible: 1
 --- !u!114 &8645367757099426085
 MonoBehaviour:
@@ -313,34 +337,15 @@ MonoBehaviour:
   clickSound: {fileID: 2719586782181248721}
   onPushIn:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PedestalIndicatorController, Assembly-CSharp
-        m_MethodName: OnPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PedestalIndicatorController, Assembly-CSharp
-        m_MethodName: HideAll
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onBuzzer:
+    m_PersistentCalls:
+      m_Calls: []
+  longBuzzerSound: {fileID: 8300000, guid: 082c8a37ca0a0ad4290a1eab930f8bbe, type: 3}
+  shortBuzzerSound: {fileID: 8300000, guid: 2d2c8ca5a6b65754e88cdf42380957d7, type: 3}
 --- !u!82 &2719586782181248721
 AudioSource:
   m_ObjectHideFlags: 0
@@ -351,10 +356,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6a493ec27f47f6e428bd22adb4677d95, type: 3}
-  m_Resource: {fileID: 8300000, guid: 6a493ec27f47f6e428bd22adb4677d95, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2d2c8ca5a6b65754e88cdf42380957d7, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d2c8ca5a6b65754e88cdf42380957d7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -3,15 +3,19 @@ using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class MinuteHandRotate : MonoBehaviour
+public class RotateObject : MonoBehaviour
 {
-    private float rotationAngle = 150f;   // Degrees to rotate
-    private float duration = 5;         // Time in seconds
+    public float rotationAngle = 150f;   // Degrees to rotate
+    public float duration = 5;         // Time in seconds
 
     private bool isRotating = false;
-    private float delayBeforeStart = 2f;
+    public float delayBeforeStart = 2f;
     private AudioSource audioSource;
     public AudioClip newClip;
+
+    public bool x = false;
+    public bool y = false;
+    public bool z = false;
 
     [Header("Camera Shake")]
     [SerializeField] private CinemachineBasicMultiChannelPerlin cameraShake;
@@ -49,7 +53,20 @@ public class MinuteHandRotate : MonoBehaviour
             audioSource.Play();
 
         Quaternion startRotation = transform.rotation;
-        Quaternion endRotation = startRotation * Quaternion.AngleAxis(rotationAngle, Vector3.right); // X-axis rotation
+        Quaternion endRotation;
+
+        if (x == true)
+        {
+            endRotation = startRotation * Quaternion.AngleAxis(rotationAngle, Vector3.right); // X-axis rotation
+        }
+        else if (z == true)
+        {
+            endRotation = startRotation * Quaternion.AngleAxis(rotationAngle, Vector3.forward); //z -axis rotation
+        }
+        else
+        {
+            endRotation = startRotation * Quaternion.AngleAxis(rotationAngle, Vector3.up); // y-axis rotation
+        }
 
         float elapsed = 0f;
         while (elapsed < duration)

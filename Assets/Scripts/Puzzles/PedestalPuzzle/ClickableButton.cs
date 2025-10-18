@@ -25,11 +25,16 @@ public class ClickableButton : MonoBehaviour
     [Header("Events")]
     public UnityEvent onPushIn;
     public UnityEvent onRelease;
-    
+
+    public UnityEvent onBuzzer;
+
+    public AudioClip longBuzzerSound;
+    public AudioClip shortBuzzerSound;
+
     private void Start()
     {
         _startPos = transform.position;
-        
+
         if (reversePressDirection)
             _endPos = _startPos + (Vector3.back * depressionDepth);
         else
@@ -44,6 +49,52 @@ public class ClickableButton : MonoBehaviour
         StartCoroutine(currentAnimationCoroutine);
     }
 
+    public void OnBuzzShort()
+    {
+        clickSound.clip = shortBuzzerSound;
+        StartCoroutine(buzzShort());
+    }
+
+    public void OnBuzzLong()
+    {
+        clickSound.clip = longBuzzerSound;
+        clickSound.loop = true;
+        StartCoroutine(PushInCoroutine());
+    }
+
+    public void OnBuzzLongRelease()
+    {
+        clickSound.clip = null;
+        clickSound.loop = false;
+        StartCoroutine(ReleaseCoroutine());
+    }
+
+    private IEnumerator buzzShort()
+    {
+        onBuzzer.Invoke();
+        PlayClickSound();
+
+        float elapsedTime = 0f;
+        while (elapsedTime < pushAnimationLength)
+        {
+            transform.position = Vector3.Lerp(_startPos, _endPos, animationCurve.Evaluate(elapsedTime / pushAnimationLength));
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        elapsedTime = 0f;
+        while (elapsedTime < pushAnimationLength)
+        {
+            transform.position = Vector3.Lerp(_endPos, _startPos, animationCurve.Evaluate(elapsedTime / pushAnimationLength));
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        yield return null;
+    }
+
     private void PlayClickSound()
     {
         if (!clickSound)
@@ -51,7 +102,7 @@ public class ClickableButton : MonoBehaviour
         else
             clickSound.Play();
     }
-    
+
     private IEnumerator PushInCoroutine()
     {
         onPushIn.Invoke();
@@ -69,10 +120,10 @@ public class ClickableButton : MonoBehaviour
         }
 
         yield return null;
-        
+
         currentAnimationCoroutine = null;
     }
-    
+
     private IEnumerator ReleaseCoroutine(bool userTriggered = true)
     {
         _pushedIn = false;
@@ -91,9 +142,9 @@ public class ClickableButton : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        
+
         yield return null;
-        
+
         currentAnimationCoroutine = null;
     }
 
@@ -103,7 +154,8 @@ public class ClickableButton : MonoBehaviour
     public void Release()
     {
         if (currentAnimationCoroutine != null) StopCoroutine(currentAnimationCoroutine);
-        
+
         StartCoroutine(ReleaseCoroutine(false));
     }
+
 }

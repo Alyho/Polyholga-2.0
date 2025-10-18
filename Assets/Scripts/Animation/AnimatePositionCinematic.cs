@@ -12,7 +12,7 @@ public class AnimatePositionCinematic : MonoBehaviour
     [Header("Options")]
     [Tooltip("The amount of time to wait between the sound start time and the animation start time.")]
     public Transform endPos;
-    
+
     [Header("Animation")]
     public AnimationCurve animationCurve;
 
@@ -25,12 +25,13 @@ public class AnimatePositionCinematic : MonoBehaviour
     public AnimationCurve cameraShakeCurve;
 
     private Vector3 _startPos;
+    private bool opened = false;
 
     private void Start()
     {
         _startPos = transform.position;
     }
-    
+
     public void Reveal()
     {
         StartCoroutine(OpenDoorCoroutine());
@@ -46,16 +47,46 @@ public class AnimatePositionCinematic : MonoBehaviour
         yield return new WaitForSeconds(animationDelay);
 
         float elapsedTime = 0f;
-        while (elapsedTime < animationLength)
+        if (opened == false)
         {
-            transform.position = Vector3.Lerp(_startPos, endPos.transform.position, animationCurve.Evaluate(elapsedTime / animationLength));
-            cameraShake.AmplitudeGain = cameraShakeCurve.Evaluate(elapsedTime / animationLength) * cameraShakeStrength;
+            while (elapsedTime < animationLength)
+            {
 
-            elapsedTime += Time.deltaTime;
-            yield return null;
+                transform.position = Vector3.Lerp(_startPos, endPos.transform.position, animationCurve.Evaluate(elapsedTime / animationLength));
+
+                if (cameraShake != null)
+                {
+                    cameraShake.AmplitudeGain = cameraShakeCurve.Evaluate(elapsedTime / animationLength) * cameraShakeStrength;
+                }
+
+                elapsedTime += Time.deltaTime;
+                opened = true;
+                yield return null;
+            }
+        }
+        else
+        {
+            while (elapsedTime < animationLength)
+            {
+
+                transform.position = Vector3.Lerp(endPos.transform.position, _startPos, animationCurve.Evaluate(elapsedTime / animationLength));
+
+
+                if (cameraShake != null)
+                {
+                    cameraShake.AmplitudeGain = cameraShakeCurve.Evaluate(elapsedTime / animationLength) * cameraShakeStrength;
+                }
+
+                elapsedTime += Time.deltaTime;
+                opened = false;
+                yield return null;
+            }
         }
 
-        cameraShake.AmplitudeGain = 0;
+        if (cameraShake != null)
+        {
+            cameraShake.AmplitudeGain = 0;
+        }
 
         yield return null;
     }
