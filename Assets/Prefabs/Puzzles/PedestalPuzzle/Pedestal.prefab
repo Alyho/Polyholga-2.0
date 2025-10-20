@@ -1039,6 +1039,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onHold:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoldRelease:
+    m_PersistentCalls:
+      m_Calls: []
   isInteractible: 1
 --- !u!114 &6823413718789705155
 MonoBehaviour:
@@ -1128,6 +1134,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onBuzzer:
+    m_PersistentCalls:
+      m_Calls: []
+  longBuzzerSound: {fileID: 0}
+  shortBuzzerSound: {fileID: 0}
 --- !u!82 &5782422609137440874
 AudioSource:
   m_ObjectHideFlags: 0
