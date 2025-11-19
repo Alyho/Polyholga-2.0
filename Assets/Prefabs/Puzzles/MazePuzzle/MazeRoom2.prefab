@@ -1267,6 +1267,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1301712779523807231}
     m_Modifications:
     - target: {fileID: 3448529413150988730, guid: 8f4cea2938dfe554ca5965504c22fe5c, type: 3}
+      propertyPath: roomNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448529413150988730, guid: 8f4cea2938dfe554ca5965504c22fe5c, type: 3}
       propertyPath: 'lights.Array.data[0]'
       value: 
       objectReference: {fileID: 6572749895875964736}
@@ -1290,6 +1294,18 @@ PrefabInstance:
       propertyPath: 'lights.Array.data[5]'
       value: 
       objectReference: {fileID: 8903583754198451165}
+    - target: {fileID: 3448529413150988730, guid: 8f4cea2938dfe554ca5965504c22fe5c, type: 3}
+      propertyPath: onSolve.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448529413150988730, guid: 8f4cea2938dfe554ca5965504c22fe5c, type: 3}
+      propertyPath: onSolve.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448529413150988730, guid: 8f4cea2938dfe554ca5965504c22fe5c, type: 3}
+      propertyPath: onSolve.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3841405353683628531, guid: 8f4cea2938dfe554ca5965504c22fe5c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0899997
