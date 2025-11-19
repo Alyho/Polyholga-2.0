@@ -36,9 +36,9 @@ public class ClickableButton : MonoBehaviour
         _startPos = transform.position;
 
         if (reversePressDirection)
-            _endPos = _startPos + (Vector3.back * depressionDepth);
+            _endPos = _startPos + (transform.forward * depressionDepth);
         else
-            _endPos = _startPos + (Vector3.forward * depressionDepth);
+            _endPos = _startPos + (transform.forward * depressionDepth);
     }
 
     public void OnPush()

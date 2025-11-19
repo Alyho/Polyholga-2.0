@@ -1725,6 +1725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopFloor
       objectReference: {fileID: 0}
+    - target: {fileID: -1120989108687609925, guid: 8352e55fb7136424f943a9ec9afadbe4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: faaf05575676cac498e4893773d629b0, type: 2}
     - target: {fileID: -208595431880416365, guid: 8352e55fb7136424f943a9ec9afadbe4, type: 3}
       propertyPath: m_Name
       value: MinuteHand
@@ -1737,6 +1741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: clocktowerWindows
       objectReference: {fileID: 0}
+    - target: {fileID: 1442450553484104045, guid: 8352e55fb7136424f943a9ec9afadbe4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: faaf05575676cac498e4893773d629b0, type: 2}
     - target: {fileID: 8009987137999418058, guid: 8352e55fb7136424f943a9ec9afadbe4, type: 3}
       propertyPath: m_Name
       value: Dividers
