@@ -111,26 +111,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3841405353683628531}
     m_Modifications:
-    - target: {fileID: 950692009951943204, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.347
-      objectReference: {fileID: 0}
-    - target: {fileID: 950692009951943204, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587315201910871999, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.018336104
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587315201910871999, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.015080373
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587315201910871999, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0035375138
-      objectReference: {fileID: 0}
     - target: {fileID: 1587315201910871999, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00025935916
@@ -170,18 +150,6 @@ PrefabInstance:
     - target: {fileID: 1587315201910871999, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892571850256410021, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: lights.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453383343960869617, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495291564097974317, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282453602297290993, guid: 4fe9fd20295603844bf5af360bbfab35, type: 3}
       propertyPath: m_Name

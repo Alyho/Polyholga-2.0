@@ -1,8 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class GlobalCodeManager : MonoBehaviour
 {
     public static GlobalCodeManager Instance;
+    public Light firstLight;
 
     public int[] correctOrder = new int[5];
 
@@ -20,7 +22,7 @@ public class GlobalCodeManager : MonoBehaviour
 
     void Start()
     {
-
+        StartCoroutine(TurnOnLight());
 
     }
 
@@ -28,5 +30,11 @@ public class GlobalCodeManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private IEnumerator TurnOnLight()
+    {
+        yield return new WaitForSeconds(0.5f);
+        firstLight.enabled = true;
     }
 }

@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Version 1 Scenes/city-square.unity
     guid: 47f2c63c55c2845ae817da14aa54acf9
+  - enabled: 1
+    path: Assets/Scenes/Testing/Puzzles/Maze 1.unity
+    guid: 42f0f78839f49ae4793f5ba39b95c3b3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

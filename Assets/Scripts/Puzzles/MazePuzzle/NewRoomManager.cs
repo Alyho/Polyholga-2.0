@@ -38,6 +38,8 @@ public class NewRoomManager : MonoBehaviour
             animateDoor.Reveal();
             locked = true;
             CheckAnswer();
+
+
             StartCoroutine(TurnOnLightsSequentially());
         }
 
@@ -59,7 +61,10 @@ public class NewRoomManager : MonoBehaviour
 
     private void CheckAnswer()
     {
-
+        if (GlobalCodeManager.Instance.currentIndex >= GlobalCodeManager.Instance.correctOrder.Length)
+        {
+            return;
+        }
         GlobalCodeManager.Instance.currentOrder[GlobalCodeManager.Instance.currentIndex] = roomNumber;
 
 
@@ -74,8 +79,7 @@ public class NewRoomManager : MonoBehaviour
             GlobalCodeManager.Instance.currentIndex++;
             if (GlobalCodeManager.Instance.currentIndex >= GlobalCodeManager.Instance.correctOrder.Length)
             {
-                // Puzzle solved
-                Debug.Log("Puzzle Solved!");
+
                 onSolve?.Invoke();
                 // You can add additional actions here when the puzzle is solved
             }

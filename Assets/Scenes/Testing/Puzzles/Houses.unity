@@ -1171,6 +1171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doorbell
       objectReference: {fileID: 0}
+    - target: {fileID: 7710619256894159413, guid: 8bfbbfa646b8cab46a24611efea0302e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

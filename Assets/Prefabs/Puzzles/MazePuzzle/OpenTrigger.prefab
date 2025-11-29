@@ -380,7 +380,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.94, y: -3.22, z: -12.39}
-  m_LocalScale: {x: 2.6143482, y: 4.7165976, z: 7.6815367}
+  m_LocalScale: {x: 2.7717319, y: 4.7165976, z: 7.6815367}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 950692009951943204}
@@ -423,6 +423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: {fileID: 0}
+  lastRoomPrefab: {fileID: 268041493363406357, guid: 2a5928d4178bb5e4d843ae5d7372a947, type: 3}
+  newSpawnPoint: {fileID: 0}
   spawnPoint: {fileID: 0}
 --- !u!1 &8004326118284121880
 GameObject:

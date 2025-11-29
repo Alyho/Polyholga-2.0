@@ -49,6 +49,7 @@ public class AnimatePositionCinematic : MonoBehaviour
         float elapsedTime = 0f;
         if (opened == false)
         {
+            opened = true;
             while (elapsedTime < animationLength)
             {
 
@@ -60,12 +61,13 @@ public class AnimatePositionCinematic : MonoBehaviour
                 }
 
                 elapsedTime += Time.deltaTime;
-                opened = true;
+
                 yield return null;
             }
         }
         else
         {
+            opened = false;
             while (elapsedTime < animationLength)
             {
 
@@ -78,7 +80,7 @@ public class AnimatePositionCinematic : MonoBehaviour
                 }
 
                 elapsedTime += Time.deltaTime;
-                opened = false;
+
                 yield return null;
             }
         }

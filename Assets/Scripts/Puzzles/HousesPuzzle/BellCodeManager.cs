@@ -26,6 +26,7 @@ public class BellCodeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Something wrong with countingGap Logic because it'll remain false after user does something even if I click the button again
         if (countingGap)
         {
             gapTimer += Time.deltaTime;
@@ -34,7 +35,7 @@ public class BellCodeManager : MonoBehaviour
             {
                 countingGap = false;
                 CompareCode();
-                //UnityEngine.Debug.Log($"Word ended. Morse so far: {currentMorse}");
+                UnityEngine.Debug.Log($"Word ended.");
             }
         }
     }
@@ -60,12 +61,14 @@ public class BellCodeManager : MonoBehaviour
 
     public void addDot()
     {
+
         if (index < currentMorse.Length)
         {
             currentMorse[index] = 1;
             index++;
             gapTimer = 0f;
             countingGap = true;
+            UnityEngine.Debug.Log(index + " " + countingGap);
         }
     }
 
@@ -76,12 +79,14 @@ public class BellCodeManager : MonoBehaviour
 
     public void addDash()
     {
+        countingGap = true;
+
         if (index < currentMorse.Length)
         {
             currentMorse[index] = 2;
             index++;
             gapTimer = 0f;
-            countingGap = true;
+            UnityEngine.Debug.Log(index + " " + countingGap);
         }
     }
 }

@@ -75,7 +75,7 @@ public class Interactable : MonoBehaviour
     private void OnHold()
     {
         if (!isInteractible) return;
-        Debug.Log("Mouse Held");
+        //Debug.Log("Mouse Held");
 
         onHold.Invoke();
     }
@@ -83,7 +83,7 @@ public class Interactable : MonoBehaviour
     private void OnHoldRelease()
     {
         if (!isInteractible) return;
-        Debug.Log("Hold Released");
+        //Debug.Log("Hold Released");
         onHoldRelease.Invoke();
     }
 }

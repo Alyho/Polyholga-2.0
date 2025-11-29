@@ -2,12 +2,13 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Serialization;
-
-
 public class DoorTrigger : MonoBehaviour
 {
     public GameObject nextRoom;
     private GameObject nextRoomRef;
+
+    public GameObject lastRoomPrefab;
+    public Transform newSpawnPoint;
 
     public Transform spawnPoint;
 
@@ -52,12 +53,13 @@ public class DoorTrigger : MonoBehaviour
             if (onFront == false)
             {
                 locked = true;
-                StartCoroutine(Delay());
+                StartCoroutine(RemoveCurrentRoom());
             }
             else
             {
+                locked = false;
                 animateDoor.Reveal();
-                StartCoroutine(Delay());
+                StartCoroutine(RemoveNextRoom());
 
             }
         }
@@ -70,20 +72,41 @@ public class DoorTrigger : MonoBehaviour
         return dot > 0f;
     }
 
-    private IEnumerator Delay()
+    /*private IEnumerator Delay()
     {
+        Debug.Log("Check " + (nextRoomRef != null) + " " + (locked == false));
 
-        if (nextRoomRef != null && locked == false)
+        if (nextRoomRef != null || locked == false)
         {
+            GameObject nextRoomRefRef = nextRoomRef;
             yield return new WaitForSeconds(1.5f);
-            Destroy(nextRoomRef);
-            nextRoomRef = null;
+            Destroy(nextRoomRefRef);
+            //nextRoomRef = null;
         }
         else
         {
+
             yield return new WaitForSeconds(1f);
             Destroy(transform.parent.gameObject);
         }
+    }*/
+
+    private IEnumerator RemoveNextRoom()
+    {
+        GameObject nextRoomRefRef = nextRoomRef;
+        yield return new WaitForSeconds(1.5f);
+        Destroy(nextRoomRefRef);
     }
 
+    private IEnumerator RemoveCurrentRoom()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(transform.parent.gameObject);
+    }
+
+    public void ChangeNextRoom()
+    {
+        nextRoom = lastRoomPrefab;
+        spawnPoint = newSpawnPoint;
+    }
 }
