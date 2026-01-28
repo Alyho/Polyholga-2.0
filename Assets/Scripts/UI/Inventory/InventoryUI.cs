@@ -31,17 +31,15 @@ public class InventoryUI : MonoBehaviour
 
    public void UpdateKeyUI()
 {
-    // 1. Clear existing icons
     foreach (GameObject icon in spawnedIcons)
     {
         Destroy(icon);
     }
     spawnedIcons.Clear();
 
-    // 2. Loop through each unique item type in the inventory
     foreach (InventoryItem item in InventorySystem.current.inventory)
     {
-        // 3. NEW: Loop based on the stack size of that item
+
         for (int i = 0; i < item.stackSize; i++)
         {
             GameObject newIcon = Instantiate(iconPrefab, container);

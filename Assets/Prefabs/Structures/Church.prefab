@@ -299,18 +299,6 @@ MonoBehaviour:
   onEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 976338336967072285}
-        m_TargetAssemblyTypeName: ObjectVisibility, Assembly-CSharp
-        m_MethodName: ShowObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1050282669105752519}
         m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
         m_MethodName: SetInteractable
@@ -2704,6 +2692,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onHold:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoldRelease:
+    m_PersistentCalls:
+      m_Calls: []
   isInteractible: 0
 --- !u!114 &3821256344937603280
 MonoBehaviour:
@@ -2720,6 +2714,7 @@ MonoBehaviour:
   swordSprite: {fileID: 0}
   cutScene: {fileID: 0}
   emptySwordSprite: {fileID: 0}
+  crosshair: {fileID: 0}
   growFactor: 2
   waitTime: 0.5
   maxSize: 0.7

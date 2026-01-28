@@ -3152,26 +3152,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8293789630631510310}
     m_Modifications:
-    - target: {fileID: 3658020117972791206, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 32195b71ba08c3344b7746b9531d99f2, type: 2}
-    - target: {fileID: 3702857505516550046, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-      propertyPath: onSolve.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2988037221414258188}
-    - target: {fileID: 4945660057639020211, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0015959296
-      objectReference: {fileID: 0}
-    - target: {fileID: 4945660057639020211, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0015959295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4945660057639020211, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0015959298
-      objectReference: {fileID: 0}
     - target: {fileID: 4945660057639020211, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.004214378
@@ -3216,10 +3196,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HexTableAndChairs
       objectReference: {fileID: 0}
-    - target: {fileID: 5927945712237806700, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 296188486001201479700ef3ab88c6f2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3228,11 +3204,6 @@ PrefabInstance:
 --- !u!4 &1314683192998405455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4945660057639020211, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
-  m_PrefabInstance: {fileID: 6240919226604962812}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2988037221414258188 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 9217627075777332720, guid: 9943c6bda0c64445c9ac7e2f20cf048f, type: 3}
   m_PrefabInstance: {fileID: 6240919226604962812}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6682382922786075291

@@ -11,7 +11,8 @@ public class CollectableItem : MonoBehaviour
         {
             InventoryUI.instance.UpdateKeyUI();
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 
