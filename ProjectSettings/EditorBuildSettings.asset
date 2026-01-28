@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Version 1 Scenes/FirstScene.unity
     guid: e580f93bb65d871458928d70991a564c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Version 1 Scenes/city-square.unity
     guid: 47f2c63c55c2845ae817da14aa54acf9
+  - enabled: 1
+    path: Assets/Scenes/Testing/townSoloLevel.unity
+    guid: b61810465d315d74a8e47c1526cb5521
+  - enabled: 0
+    path: Assets/Scenes/Testing/town-city-square.unity
+    guid: 1fdbbfcc2a725a546911d2c1f5d01555
   - enabled: 1
     path: Assets/Scenes/Testing/Puzzles/Maze 1.unity
     guid: 42f0f78839f49ae4793f5ba39b95c3b3

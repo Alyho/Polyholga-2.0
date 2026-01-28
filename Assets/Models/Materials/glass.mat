@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: glass
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 597e9489b3dc4f34eb0d122ef378bb78, type: 2}
+  m_Parent: {fileID: 2100000, guid: dd86f22c8c5b64e3085c8d01f4f21ee5, type: 2}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
   - _ALPHAPREMULTIPLY_ON

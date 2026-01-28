@@ -17,9 +17,10 @@ public class ScrollUp : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startPoint = transform.position;
-        endPoint = endPointObject.transform.position;
-        StartCoroutine(Scroll());
+
+        //startPoint = transform.position;
+        //endPoint = endPointObject.transform.position;
+        //StartCoroutine(Scroll());
     }
 
     // Update is called once per frame
@@ -59,5 +60,10 @@ public class ScrollUp : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene("FirstScene");
+    }
+
+    public void Skip()
+    {
+        StartCoroutine(FadeToBlackCoroutine());
     }
 }

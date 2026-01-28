@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class OpeningCutscene : MonoBehaviour
 {
     [SerializeField] private GameObject titleScreen;
-    
+
     [SerializeField] private GameObject[] sentences;
 
     [Tooltip("Length of each frame in seconds")]
@@ -21,10 +21,10 @@ public class OpeningCutscene : MonoBehaviour
             AdvanceFrame();
 
         if (_onTitleScreen) return;
-            
+
         if (_timeOnFrame >= frameLength)
             AdvanceFrame();
-        
+
         _timeOnFrame += Time.deltaTime;
     }
 
@@ -34,21 +34,21 @@ public class OpeningCutscene : MonoBehaviour
         {
             titleScreen.SetActive(false);
             _onTitleScreen = false;
-            
+
             sentences[0].SetActive(true);
             return;
         }
-        
+
         if (_currentFrameIdx == sentences.Length - 1)
         {
-            SceneManager.LoadScene("city-square", LoadSceneMode.Single);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
             return;
         }
 
         sentences[_currentFrameIdx].SetActive(false);
         _currentFrameIdx++;
         sentences[_currentFrameIdx].SetActive(true);
-        
+
         _timeOnFrame = 0f;
     }
 }

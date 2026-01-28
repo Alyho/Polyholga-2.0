@@ -548,7 +548,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &978411901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ONLY YOU, LONELY TRAVELER, CAN RESTORE GLORY TO SHAPELAND.
+  m_text: A CURSE BEFELL SHAPELAND, THE THIEF UNKNOWN.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
