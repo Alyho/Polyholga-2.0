@@ -22,7 +22,7 @@ public class GlobalCodeManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(TurnOnLight());
+        firstLight.enabled = true;
 
     }
 
@@ -35,6 +35,6 @@ public class GlobalCodeManager : MonoBehaviour
     private IEnumerator TurnOnLight()
     {
         yield return new WaitForSeconds(0.5f);
-        firstLight.enabled = true;
+        
     }
 }

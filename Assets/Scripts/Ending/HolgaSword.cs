@@ -6,6 +6,7 @@ public class HolgaSword : MonoBehaviour
 {
 
     public static bool hasSword = false;
+    public InventoryItemData requiredSword; 
     public GameObject swordSprite;
 
     public GameObject cutScene;
@@ -21,27 +22,27 @@ public class HolgaSword : MonoBehaviour
 
     void Start()
     {
-        ogSize = emptySwordSprite.transform.localScale;
+        //ogSize = emptySwordSprite.transform.localScale;
+        
     }
 
     public void OnClick()
     {
-        if (hasSword == false)
-        {
-            StartCoroutine(NoSword());
-        }
-        else
+        InventoryItem item = InventorySystem.current.Get(requiredSword);
+        
+        if (item != null)
         {
             cutScene.SetActive(true);
             swordSprite.SetActive(false);
             crosshair.SetActive(false);
 
             GetComponent<Outline>().OutlineWidth = 0;
-            hasSword = false;
+            InventorySystem.current.Remove(requiredSword);
+            //hasSword = false;
         }
     }
 
-    private IEnumerator NoSword()
+    /*private IEnumerator NoSword()
     {
         while (maxSize > emptySwordSprite.transform.localScale.x)
         {
@@ -65,5 +66,5 @@ public class HolgaSword : MonoBehaviour
         //emptySwordSprite.transform.localScale -= new Vector3(1, 1, 1) * Time.deltaTime * growFactor;
 
         //yield return new WaitForSeconds(0);
-    }
+    }*/
 }
